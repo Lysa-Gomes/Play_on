@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import GlobStyled from "./styled";
+import Header from "./Components/Header/header";
+import Main from "./Components/Main/main";
+import Footer from "./Components/Footer/footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function App(playon) {
+    return (
+        <div>
+          <GlobStyled/>
+          <Header/>
+          <Main/>
+          <Footer/>
+        </div>
+    )
 }
-
-export default App;
